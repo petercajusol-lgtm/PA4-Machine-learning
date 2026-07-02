@@ -1,0 +1,96 @@
+<!-- Inspirado en el diseño de https://www.muji.com/ -->
+<!-- Integrante: Peter Alonso Cajusol Ramos -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA para Machine Learning</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', -apple-system, sans-serif;
+            font-weight: 300;
+            color: #333;
+            background: #fff;
+            line-height: 1.8;
+        }
+        .top-bar {
+            padding: 16px 40px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            color: #888;
+            text-transform: uppercase;
+        }
+        .main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px 40px;
+        }
+        .header-image {
+            width: 600px;
+            height: 400px;
+            display: block;
+            margin: 0 auto 60px;
+            object-fit: cover;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .section-label {
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            color: #aaa;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        video, audio {
+            width: 100%;
+            display: block;
+            outline: none;
+        }
+        video::-webkit-media-controls,
+        audio::-webkit-media-controls {
+            border-radius: 0;
+        }
+        footer {
+            border-top: 1px solid #eee;
+            padding: 24px 40px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #aaa;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">EDA</div>
+
+    <div class="main">
+        <img class="header-image" src="encabezado.jpg" alt="Exploratory Data Analysis">
+
+        <div class="section">
+            <div class="section-label">Video</div>
+            <video controls>
+                <source src="video_eda.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+
+        <div class="section">
+            <div class="section-label">Audio &mdash; Traducción al Español</div>
+            <audio controls>
+                <source src="audio_eda.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+        </div>
+    </div>
+
+    <footer>
+        Peter Alonso Cajusol Ramos
+    </footer>
+
+</body>
+</html>
